@@ -37,7 +37,7 @@ public class ManterCidade {
     public static void inserir() throws SQLException, ClassNotFoundException{
         String nome = JOptionPane.showInputDialog("Nome");
         String capital = JOptionPane.showInputDialog("Capital?(s/n)");
-        Boolean isCapital = capital == "s";
+        Boolean isCapital = "s".equals(capital);
         String clima = JOptionPane.showInputDialog("Clima");
         int populacao = Integer.parseInt(JOptionPane.showInputDialog("População"));
         int pais_id = Integer.parseInt(JOptionPane.showInputDialog("ID do país"));
@@ -50,7 +50,7 @@ public class ManterCidade {
         int id = Integer.parseInt(JOptionPane.showInputDialog("ID"));
         String nome = JOptionPane.showInputDialog("Nome");
         String capital = JOptionPane.showInputDialog("Capital?(s/n)");
-        Boolean isCapital = capital == "s";
+        Boolean isCapital = "s".equals(capital);
         String clima = JOptionPane.showInputDialog("Clima");
         int pais_id = Integer.parseInt(JOptionPane.showInputDialog("Id do país"));
         int populacao = Integer.parseInt(JOptionPane.showInputDialog("População"));

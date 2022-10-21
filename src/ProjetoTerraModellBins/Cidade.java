@@ -21,6 +21,7 @@ public class Cidade {
     this.nome = nome;
     this.capital = capital; 
     this.clima = clima;
+    this.populacao = populacao;
     this.pais = pais;
 }
     public Cidade(String nome, boolean capital, String clima, int populacao) { 
@@ -39,7 +40,7 @@ public class Cidade {
     }
 
     public Cidade(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+       this.id = id;
     }
 
     public int getId() {
@@ -92,7 +93,7 @@ public class Cidade {
     
     @Override
     public String toString() {
-        return "País{" + "id=" + id + ", nome=" + nome + ", capital=" + capital + ", clima=" + clima + ", população=" + populacao + ", país+" + pais +'}';
+        return "País{" + "id=" + id + ", nome=" + nome + ", capital=" + capital + ", clima=" + clima + ", população=" + populacao + ", país=7" + pais +'}';
     }
 }
 
